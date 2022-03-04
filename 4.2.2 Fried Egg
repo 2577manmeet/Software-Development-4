@@ -1,0 +1,70 @@
+var PAN_RADIUS = getWidth()/3; 
+var HANDLE_WIDTH = getWidth()/2;
+var HANDLE_HEIGHT = HANDLE_WIDTH/4;
+var PAN_COLOR = Color.GRAY;
+
+var PAN_BOTTOM_RADIUS = PAN_RADIUS-20;
+var PAN_BOTTOM_COLOR = Color.BLACK;
+
+var EGG_RADIUS = PAN_BOTTOM_RADIUS/4; 
+var EGG_WHITE_COLOR = Color.WHITE; 
+var EGG_YOLK_COLOR = Color.YELLOW;
+
+var HIGHLIGHT_RADIUS = EGG_RADIUS/4; 
+var HIGHLIGHT_COLOR = Color.WHITE;
+
+function start() {
+    var centerX = getWidth()/2; 
+    var centerY = getHeight()/2;
+
+    var pan = new Circle(PAN_RADIUS); 
+    pan.setColor(PAN_COLOR); 
+    pan.setPosition(centerX, centerY); 
+    add(pan);
+    
+    var handle = new Rectangle(HANDLE_WIDTH, HANDLE_HEIGHT); 
+    handle.setColor(PAN_COLOR);
+    handle.setPosition(centerX, centerY-HANDLE_HEIGHT/2); 
+    add(handle);
+
+    var panBottom = new Circle(PAN_BOTTOM_RADIUS); 
+    panBottom.setColor(PAN_BOTTOM_COLOR); 
+    panBottom.setPosition(centerX, centerY); 
+    add(panBottom);
+
+    var eggWhite1 = new Circle(EGG_RADIUS); 
+    eggWhite1.setColor(EGG_WHITE_COLOR);
+    eggWhite1.setPosition(centerX-EGG_RADIUS+5, centerY-EGG_RADIUS); 
+    add(eggWhite1);
+    
+    var eggWhite2 = new Circle(EGG_RADIUS); 
+    eggWhite2.setColor(EGG_WHITE_COLOR);
+    eggWhite2.setPosition(centerX+EGG_RADIUS-5, centerY-EGG_RADIUS); 
+    add(eggWhite2);
+    var eggWhite3 = new Circle(EGG_RADIUS); 
+    eggWhite3.setColor(EGG_WHITE_COLOR);
+    eggWhite3.setPosition(centerX-EGG_RADIUS*2+5, centerY+EGG_RADIUS-20); 
+    add(eggWhite3);
+    
+    var eggWhite4 = new Circle(EGG_RADIUS); 
+    eggWhite4.setColor(EGG_WHITE_COLOR);
+    eggWhite4.setPosition(centerX-EGG_RADIUS+10, centerY+EGG_RADIUS+10); 
+    add(eggWhite4);
+    
+    var eggWhite5 = new Circle(EGG_RADIUS); 
+    eggWhite5.setColor(EGG_WHITE_COLOR); 
+    eggWhite5.setPosition(centerX+EGG_RADIUS, centerY+EGG_RADIUS-10); 
+    add(eggWhite5);
+    
+    var eggYolk = new Circle(EGG_RADIUS); 
+    eggYolk.setColor(EGG_YOLK_COLOR); 
+    eggYolk.setPosition(centerX, centerY); 
+    add(eggYolk);
+    
+    var highlight = new Circle(HIGHLIGHT_RADIUS); 
+    highlight.setColor(HIGHLIGHT_COLOR); 
+    highlight.setPosition(centerX+EGG_RADIUS/3, centerY-EGG_RADIUS/3); 
+    add(highlight);
+    
+    
+}
