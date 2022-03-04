@@ -1,0 +1,17 @@
+var partOfDay = "morning";
+
+var time = 8;
+
+println("I wake up" + partOfDay + time);
+
+partOfDay = "afternoon";
+
+time = 12;
+
+println("I like" + partOfDay + time);
+
+partOfDay = "evening";
+
+time = 11;
+
+println("I go to sleep" + partOfDay + time);
