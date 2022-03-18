@@ -1,0 +1,22 @@
+function start () {
+    putBall();
+    move5();
+    putBall();
+    turnLeft();
+    move5();
+    putBall();
+    turnLeft();
+    move5();
+    putBall();
+    turnLeft();
+
+    move5();
+    turnLeft();
+}
+
+
+function move5(){
+    for(var i = 0; i < 5; i++){
+	    move();
+    }
+}
