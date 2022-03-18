@@ -1,0 +1,54 @@
+/*This function allows Karel to jump 5 hurdles and end up at the end of
+
+*the map.
+
+*Preconditon: Karel is at one, one and needs to jump 5 hurdles and end
+
+*up at the end of the map.
+
+*Postcondition: Karel is at the end of the map.
+
+*/
+
+function start(){
+
+    for(var i = 0; i < 5; i++){
+        jumpHurdle();
+
+    }
+
+}
+
+
+
+/*This function allows Karel to jump one hurdle.
+
+*Precondition: Karel is 2 steps before the hurdle facing east.
+
+*Postcondition: Karel jumps the hurdle and is to the immediate right of
+
+the hurdle facing east.
+
+*/
+
+function jumpHurdle() {
+
+    move();
+    
+    move();
+    
+    turnLeft();
+    
+    move();
+    
+    turnRight();
+    
+    move();
+    
+    turnRight();
+    
+    move();
+    
+    turnLeft();
+
+}
