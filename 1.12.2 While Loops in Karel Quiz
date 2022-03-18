@@ -1,0 +1,19 @@
+Question: 1
+Why do we use while loops in JavaScript?
+
+
+To repeat some code while a condition is true
+
+
+
+
+
+Question: 2
+Which general while loop definition is written correctly?
+
+
+D
+
+while (condition) {
+    //code
+}
