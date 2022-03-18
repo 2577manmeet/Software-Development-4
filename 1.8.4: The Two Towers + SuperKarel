@@ -1,0 +1,28 @@
+function start(){
+    move();
+	ballplace();
+	turnRight();
+	move();
+	turnRight();
+	move();
+	move();
+    move();
+    turnLeft();
+    move();
+	ballplace();
+	turnRight();
+}
+
+
+
+function ballplace(){
+    putBall();
+    turnLeft();
+    move();
+    putBall();
+    move();
+    putBall();
+    move();
+}
+
+/// No function with turn left is nedded here
