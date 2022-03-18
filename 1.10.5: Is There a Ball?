@@ -1,0 +1,54 @@
+/*Karel should put a ball on the first spot if there isn't one
+
+*already there and then move.
+
+*/
+
+function start(){
+
+    hasBallTrue();
+    
+    hasBallFalse();
+    
+    move();
+}
+
+
+
+/*This function allows Karel to move one space if there is a ball
+
+*where he is standing.
+
+*Precondition: There is a ball present.
+
+*Postcondition: Karel continues with the code.
+
+*/
+
+function hasBallTrue(){
+
+    if(ballsPresent()){
+
+    }
+
+}
+
+
+
+/*This function allows Karel to put a ball if there is no ball present.
+
+*Precondition: There is no ball present.
+
+*Postcondition: There is a ball present.
+
+*/
+
+function hasBallFalse() {
+
+    if(noBallsPresent()) {
+
+        putBall();
+
+    }
+
+}
