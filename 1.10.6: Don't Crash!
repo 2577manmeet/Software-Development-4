@@ -1,0 +1,53 @@
+/*This function allows Karel to end up on street one, avenue two facing
+
+*east if he is on one, one facing east or south.
+
+*/
+
+function start() {
+
+    go();
+    
+    turnGo();
+    
+    move();
+
+}
+
+
+
+/*If the front is clear then Karel can move.
+
+*Precondition: The front is clear.
+
+*Postcondition: Karel will move one space.
+
+*/
+
+function go() {
+
+    if(frontIsClear()) {
+
+    }
+
+}
+
+
+
+/*If Karel is facing south he will turn to face the east.
+
+*Precondition: Karel is facing south.
+
+*Postcondition: Karel will face east.
+
+*/
+
+function turnGo() {
+
+    if(facingSouth()) {
+    
+        turnLeft();
+
+    }
+
+}
