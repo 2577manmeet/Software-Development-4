@@ -1,0 +1,17 @@
+Question: 1
+Why do we use if statements in JavaScript?
+
+
+To do something only if a condition is true
+
+
+
+Question: 2
+Which general if statement definition is written correctly?
+
+
+B
+
+if(condition) {
+    //code
+} 
