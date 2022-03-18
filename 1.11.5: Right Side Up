@@ -1,0 +1,19 @@
+function start(){
+    checkdirection();
+    checkdirection2();
+}
+
+function checkdirection(){
+    if(facingSouth()){
+        turnLeft();
+    }
+    
+}
+
+function checkdirection2(){
+    if(facingWest()){
+        turnRight();
+        turnRight();
+    }
+    
+}
