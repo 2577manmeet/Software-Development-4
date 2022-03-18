@@ -1,0 +1,19 @@
+function start(){
+	 move();
+	 takeeallthemballs();
+	 move();
+	 
+}
+
+
+
+
+
+
+
+
+function takeeallthemballs(){
+    for(var i = 0; i < 100; i++){
+        takeBall();
+    }
+}
